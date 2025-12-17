@@ -12,10 +12,16 @@ class Myrient:
             ("GB", "https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Game%20Boy/"),
             ("GBC", "https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Game%20Boy%20Color/"),
             ("GBA", "https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Game%20Boy%20Advance/"),
-            ("PS", "https://myrient.erista.me/files/Redump/Sony%20-%20PlayStation/"),
-            ("PSP", "https://myrient.erista.me/files/Redump/Sony%20-%20PlayStation%20Portable/"),
+            ("FC", "https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Nintendo%20Entertainment%20System%20%28Headerless%29/"),
+            ("SFC", "https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/"),
             ("NDS", "https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Nintendo%20DS%20%28Decrypted%29/"),
             ("N64", "https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Nintendo%2064%20%28BigEndian%29/"),
+            ("PS", "https://myrient.erista.me/files/Redump/Sony%20-%20PlayStation/"),
+            ("PSP", "https://myrient.erista.me/files/Redump/Sony%20-%20PlayStation%20Portable/"),
+            ("MD", "https://myrient.erista.me/files/No-Intro/Sega%20-%20Mega%20Drive%20-%20Genesis/"),
+            ("GG", "https://myrient.erista.me/files/No-Intro/Sega%20-%20Game%20Gear/"),
+            ("SEGA32X", "https://myrient.erista.me/files/No-Intro/Sega%20-%2032X/"),
+            ("SMS", "https://myrient.erista.me/files/No-Intro/Sega%20-%20Master%20System%20-%20Mark%20III/"),
         ]
         self.__roms_list = []
     

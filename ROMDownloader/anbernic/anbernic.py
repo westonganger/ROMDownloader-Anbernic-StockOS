@@ -15,6 +15,12 @@ class Anbernic:
             "GB": "GB",
             "NDS": "NDS",
             "N64": "N64",
+            "FC": "FC",
+            "SFC": "SFC",
+            "MD": "MD",
+            "SMS": "SMS",
+            "GG": "GG",
+            "SEGA32X": "SEGA32X",
         }
         self.__current_sd = 2
 
