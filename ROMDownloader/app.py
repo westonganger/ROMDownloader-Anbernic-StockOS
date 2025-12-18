@@ -108,6 +108,18 @@ def load_roms_menu():
 		elif input.value == -1:
 			if roms_selected_position > 0:
 				roms_selected_position -= 1
+	elif input.key("DX"):
+		if input.value == 1:
+			list_size = len(roms_list)
+			if roms_selected_position < (list_size - max_elem):
+				roms_selected_position += max_elem
+			elif roms_selected_position < list_size:
+				roms_selected_position = list_size
+		elif input.value == -1:
+			if roms_selected_position > max_elem:
+				roms_selected_position -= max_elem
+			elif roms_selected_position <= max_elem:
+				roms_selected_position = 0
 	elif input.key("L1"):
 		if roms_selected_position > 0:
 			if roms_selected_position - max_elem >= 0:
