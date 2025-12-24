@@ -1,11 +1,19 @@
 import os
-
+import subprocess
 
 class Anbernic:
     
     def __init__(self):
-        self.__sd1_rom_storage_path = "/mnt/mmc/Roms"
-        self.__sd2_rom_storage_path = "/mnt/sdcard/Roms"
+        uname_output = subprocess.check_output(["uname", "-a"], text=True).strip()
+        print("System uname output:", uname_output)
+
+        # If CFW knulli, custom path, else, stock path
+        if "knulli" in uname_output.lower():
+            self.__sd1_rom_storage_path = "/userdata/roms"
+            self.__sd2_rom_storage_path = "/userdata/roms"
+        else:
+            self.__sd1_rom_storage_path = "/mnt/mmc/Roms"
+            self.__sd2_rom_storage_path = "/mnt/sdcard/Roms"
 
         self.__rom_folder_mapping = {
             "PSP": "PSP",
