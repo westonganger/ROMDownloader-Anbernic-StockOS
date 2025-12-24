@@ -11,25 +11,40 @@ class Anbernic:
         if "knulli" in uname_output.lower():
             self.__sd1_rom_storage_path = "/userdata/roms"
             self.__sd2_rom_storage_path = "/userdata/roms"
+            self.__rom_folder_mapping = {
+                "PSP": "psp",
+                "PS": "psx",
+                "GBA": "gba",
+                "GBC": "gbc",
+                "GB": "gb",
+                "NDS": "nds",
+                "N64": "n64",
+                "FC": "nes",
+                "SFC": "snes",
+                "MD": "megadrive",
+                "SMS": "mastersystem",
+                "GG": "gamegear",
+                "SEGA32X": "sega32x",
+            }
         else:
             self.__sd1_rom_storage_path = "/mnt/mmc/Roms"
             self.__sd2_rom_storage_path = "/mnt/sdcard/Roms"
 
-        self.__rom_folder_mapping = {
-            "PSP": "PSP",
-            "PS": "PS",
-            "GBA": "GBA",
-            "GBC": "GBC",
-            "GB": "GB",
-            "NDS": "NDS",
-            "N64": "N64",
-            "FC": "FC",
-            "SFC": "SFC",
-            "MD": "MD",
-            "SMS": "SMS",
-            "GG": "GG",
-            "SEGA32X": "SEGA32X",
-        }
+            self.__rom_folder_mapping = {
+                "PSP": "PSP",
+                "PS": "PS",
+                "GBA": "GBA",
+                "GBC": "GBC",
+                "GB": "GB",
+                "NDS": "NDS",
+                "N64": "N64",
+                "FC": "FC",
+                "SFC": "SFC",
+                "MD": "MD",
+                "SMS": "SMS",
+                "GG": "GG",
+                "SEGA32X": "SEGA32X",
+            }
         self.__current_sd = 2
 
     def get_sd1_storage_path(self):
